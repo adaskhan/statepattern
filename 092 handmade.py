@@ -9,6 +9,9 @@ class State(Enum):
     ON_HOOK = auto()
 
 
+# just comment
+
+
 class Trigger(Enum):
     CALL_DIALED = auto()
     HUNG_UP = auto()
