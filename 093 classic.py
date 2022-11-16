@@ -12,6 +12,11 @@ class Switch:
     def off(self):
         self.state.off(self)
 
+class Color(ABC):
+    def red(self,switch):
+        print("Red color")
+    def blue(self,switch):
+        print("Blue color")
 
 class State(ABC):
     def on(self, switch):
@@ -49,5 +54,7 @@ if __name__ == '__main__':
               # Light turned off
 
     sw.off()  # Light is already off
+
+    
 
 
